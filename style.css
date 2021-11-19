@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@
 .secondary-body{
     height: 50vh;
 
-    background-color: bisque;
+    /* background-color: bisque; */
 
     display: flex;
     justify-content: center;
@@ -32,7 +33,7 @@
     justify-content: center;
 
     margin-top: 8px;
-
+    margin-bottom: 15px;
     
 }
 
@@ -55,7 +56,7 @@
     /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset; */
 
     width: 80vw;
-    
+    height: 70vh;
     border-radius: 6px;
 }
 
@@ -67,12 +68,19 @@
 
     color: white;
 
-    height: 50vh;
+    height: 100vh;
 
     background-image: url('assets/img/black-hole.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+      width: 100%;
+   
+}
+
+.img-background{
+    width: 100%;
+    height: auto;
 }
 
 h1{
@@ -83,20 +91,27 @@ h1{
 
 h2{
     margin-top: 15px;
- font-size: 1,9vw;   
+    font-size: 2.0vw;   
+}
+
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.3vw;
 }
 
 p{
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 15px;
+
+    font-family: 'PT Serif', serif;
     font-size: 1.2vw;
 }
 .img-responsive{
-    display: none;
+    /* display: none; */
     margin-left: 21px;
 
-    width: 20%;
+    width: 15%;
     height: auto;
 }
 
@@ -112,8 +127,30 @@ p{
 
     h1{
         /* font-family: 'Roboto', sans-serif; */
-        font-size: 4vw;
+        font-size: 5.3vw;
         font-family: 'Ubuntu', sans-serif;
+    }
+
+    h2{
+        font-size: 5.0vw;   
+    }
+
+    p{
+        
+        font-size: 4.2vw;
+    }
+
+    h3{
+        
+        font-size: 6vw;
+    }
+
+    .section-secundary-content{
+        box-shadow: none;
+    
+        width: 100vw;
+        height: 150vh ;
+        border-radius: 0px;
     }
 
 }
