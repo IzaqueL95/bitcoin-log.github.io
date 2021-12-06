@@ -101,19 +101,19 @@
     display: flex;
     justify-content: space-evenly;
 
-    margin-top: 150px;
+    margin-top: 70px;
 }
 
 .card{
    
     
    
-    background-color: #e7f3fe;
+    background-color: rgba(247, 148, 26, 0.575);
   
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
    
-    border-left: 6px solid #2196F3;
-    width: 20vw;
+    border-left: 6px solid #f7931a;
+    width: 23vw;
     height: 25vh;
     border-radius: 6px;
 }
@@ -252,6 +252,63 @@ p{
     background-repeat: no-repeat;
 }
 
+.section-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 70px;
+    margin-left: 20px;
+}
 
+.card{
+    width: 40vh;
+    margin-bottom: 20px;
+}
 
 }
+
+
+
+/*MOTO G AND SIMLAR*/
+/* @media only screen and (max-width: 395px) and (min-width: 200px) { 
+
+    .card{
+        width: 50vh;
+        margin-bottom: 20px;
+    }
+
+    .section-fifity-content{
+        height: 65vh;
+    }
+    
+} */
+
+/*IPAD PRO*/
+/* @media only screen and (max-width: 1024px) and (min-width: 200px) { 
+
+    .card{
+        width: 69vh;
+        margin-bottom: 20px;
+    }
+
+    .section-fifity-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+       
+        background-color: #e7f3fe;
+      
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+       
+        border-left: 6px solid #2196F3;
+        width: 80vw;
+        height: 90vh;
+        border-radius: 6px;
+
+       
+    }
+    
+    
+} */
