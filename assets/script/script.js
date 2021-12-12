@@ -1,9 +1,11 @@
 
 var target_date = new Date("january 15, 2145").getTime();
-
 var dias, horas, minutos, segundos;
-
 var regressiva = document.getElementById("regressiva");
+
+const headM = document.querySelector('#head')
+
+/*INICIO DO RELOGIO*/
 setInterval(function () {
     var current_date = new Date().getTime();
     var segundos_f = (target_date - current_date) / 1000;
@@ -23,4 +25,14 @@ setInterval(function () {
     document.getElementById('segundo').innerHTML = segundos;
   
 }, 1000);
+/*FIM DO RELOGIO*/
 
+document.addEventListener("scroll", function() {
+    var position = window.pageYOffset;
+
+    if(position >= 1590){
+        headM.classList.add("newClassCase")
+    }else{
+        headM.classList.remove("newClassCase")
+    }
+})
