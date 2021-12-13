@@ -147,8 +147,9 @@ ul, li > a{
 }
 
 .card{
-   
-    
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
    
     background-color: rgba(247, 148, 26, 0.575);
   
@@ -156,10 +157,25 @@ ul, li > a{
    
     border-left: 6px solid #f7931a;
     width: 23vw;
-    height: 25vh;
+    height: 32vh;
     border-radius: 6px;
+ 
 }
 
+.card > p{
+    font-size: 1vw;
+    
+}
+.card > h1 {
+    font-size: 2vw;
+    text-align: center;
+    color: aliceblue;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 .margin-time{
      font-size: 3vw;       
     /* margin-right: 25px; */
