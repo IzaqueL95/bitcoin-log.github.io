@@ -27,12 +27,12 @@ setInterval(function () {
 }, 1000);
 /*FIM DO RELOGIO*/
 
-document.addEventListener("scroll", function() {
-    var position = window.pageYOffset;
+// document.addEventListener("scroll", function() {
+//     var position = window.pageYOffset;
 
-    if(position >= 1590){
-        headM.classList.add("newClassCase")
-    }else{
-        headM.classList.remove("newClassCase")
-    }
-})
+//     if(position >= 1590){
+//         headM.classList.add("newClassCase")
+//     }else{
+//         headM.classList.remove("newClassCase")
+//     }
+// })
