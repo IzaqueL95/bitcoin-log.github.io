@@ -143,6 +143,7 @@ ul, li > a{
     display: flex;
     justify-content: space-evenly;
 
+    margin-bottom: 15px;;
     margin-top: 70px;
 }
 
@@ -150,28 +151,63 @@ ul, li > a{
    display: flex;
    flex-direction: column;
     justify-content: center;
-   
     background-color: rgba(247, 148, 26, 0.575);
   
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
    
     border-left: 6px solid #f7931a;
     width: 23vw;
-    height: 32vh;
+    height: 35vh;
     border-radius: 6px;
  
 }
 
-.card > p{
+/* .card > p{
     font-size: 1vw;
     
-}
-.card > h1 {
+} */
+
+
+
+
+
+
+
+
+
+/*SERÃO INSERIDOS VIA JS*/
+/* .card > h1 {
     font-size: 2vw;
     text-align: center;
     color: aliceblue;
     
+} */
+
+.card-title{
+    font-size: 2vw;
+    text-align: center;
+    color: aliceblue;
 }
+
+.card-body{
+    font-size: .9vw;
+}
+
+.img-body{
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 36%;
+    height: auto;
+}
+/*FIM*/
+
+
+
+
+
+
+
+
 a{
     text-decoration: none;
     color: black;

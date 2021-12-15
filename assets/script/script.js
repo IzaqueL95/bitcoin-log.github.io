@@ -27,6 +27,7 @@ setInterval(function () {
 }, 1000);
 /*FIM DO RELOGIO*/
 
+
 // document.addEventListener("scroll", function() {
 //     var position = window.pageYOffset;
 
@@ -36,3 +37,46 @@ setInterval(function () {
 //         headM.classList.remove("newClassCase")
 //     }
 // })
+
+const changeHeaderColor = () => {
+    var position = window.pageYOffset
+
+    if(position >= 1590){
+        headM.classList.add("newClassCase")
+    }else{
+        headM.classList.remove("newClassCase")
+    }
+}
+document.addEventListener("scroll", changeHeaderColor)
+
+
+let page = 1
+
+const getPosts = async () => {
+    const response = await
+    fetch(`https://my-json-server.typicode.com/bitcoin-log/demo/posts?_limit=4`)
+    return response.json()
+}
+
+const postsContainer = document.querySelector('.section-card')
+
+const generatePostsTemplate = posts => posts.map(({id, title, image, description}) => `
+    <div class="card">
+        <h1 class="card-title"><a href="" target="blank">${title}</a></h1>
+        <p>${id}</p>
+        <img class="img-body" src="${image}">
+        <p class="card-body">${description}</p>
+    </div>
+
+`).join('')
+
+const addPostsIntoDom = async () => {
+    const posts = await getPosts()
+    const postsTemplate = generatePostsTemplate(posts)
+
+    postsContainer.innerHTML += postsTemplate
+    
+}
+
+addPostsIntoDom()
+
