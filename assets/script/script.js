@@ -60,10 +60,10 @@ const getPosts = async () => {
 
 const postsContainer = document.querySelector('.section-card')
 
-const generatePostsTemplate = posts => posts.map(({id, title, image, description}) => `
+const generatePostsTemplate = posts => posts.map(({author, title, image, description}) => `
     <div class="card">
         <h1 class="card-title"><a href="" target="blank">${title}</a></h1>
-        <p>${id}</p>
+        <p>${author}</p>
         <img class="img-body" src="${image}">
         <p class="card-body">${description}</p>
     </div>
