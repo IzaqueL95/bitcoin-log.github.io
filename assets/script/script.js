@@ -38,16 +38,16 @@ setInterval(function () {
 //     }
 // })
 
-const changeHeaderColor = () => {
-    var position = window.pageYOffset
+// const changeHeaderColor = () => {
+//     var position = window.pageYOffset
 
-    if(position >= 1590){
-        headM.classList.add("newClassCase")
-    }else{
-        headM.classList.remove("newClassCase")
-    }
-}
-document.addEventListener("scroll", changeHeaderColor)
+//     if(position >= 1590){
+//         headM.classList.add("newClassCase")
+//     }else{
+//         headM.classList.remove("newClassCase")
+//     }
+// }
+// document.addEventListener("scroll", changeHeaderColor)
 
 
 let page = 1
